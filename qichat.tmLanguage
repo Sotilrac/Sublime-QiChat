@@ -14,7 +14,7 @@
 			<key>comment</key>
 			<string>proposal, user rules, concepts</string>
 			<key>match</key>
-			<string>(proposal|u\d*|concept|dynamic):</string>
+			<string>(proposal|(u|s)\d*|concept|dynamic):</string>
 			<key>name</key>
 			<string>storage.source.qichat</string>
 		</dict>
@@ -51,13 +51,13 @@
 			<key>comment</key>
 			<string>operators with parameters</string>
 			<key>match</key>
-			<string>(\^(?:play|(?:run|start|wait|stop)(?:Tag){0,1}|clear|(?:de){0,1}activate|notExist|exist|goto(?:Reactivate){0,1}|topicTag|mode))\(([\w/-]*)\)</string>
+			<string>(\^(?:replace|addword|play|(?:run|start|wait|stop)(?:Tag|Sound){0,1}|clear|(?:de){0,1}activate|notExist|exist|goto(?:Reactivate){0,1}|topicTag|mode))\(([\w/-]*)\)</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>operators without parameters</string>
 			<key>match</key>
-			<string>\^(first|rand|repeat|private|stayInScope|mode|noPick|(next|previous|same)Proposal)</string>
+			<string>\^(first|rand|repeat|private|stayInScope|mode|noPick|noStay|notInEmbeddedASR|resetOnFocus|fallback|(next|previous|same)Proposal)</string>
 			<key>name</key>
 			<string>support.function.construct</string>
 		</dict>

@@ -6,7 +6,7 @@
 
     "patterns":[
                 {
-                    "match": "(proposal|u\\d*|concept|dynamic):",
+                    "match": "(proposal|(u|s)\\d*|concept|dynamic):",
                     "name": "storage.source.qichat",
                     "comment": "proposal, user rules, concepts"
                 },
@@ -21,7 +21,7 @@
                     "comment": "comments"
                 },
                 {
-                    "match": "(\\^(?:play|(?:run|start|wait|stop)(?:Tag){0,1}|clear|(?:de){0,1}activate|notExist|exist|goto(?:Reactivate){0,1}|topicTag|mode))\\(([\\w/-]*)\\)",
+                    "match": "(\\^(?:replace|addword|play|(?:run|start|wait|stop)(?:Tag|Sound){0,1}|clear|(?:de){0,1}activate|notExist|exist|goto(?:Reactivate){0,1}|topicTag|mode))\\(([\\w/-]*)\\)",
                     "comment": "operators with parameters",
                     "captures": {
                                     "1": {"name": "support.function.construct"},
@@ -29,7 +29,7 @@
                                 }
                 },
                 {
-                    "match": "\\^(first|rand|repeat|private|stayInScope|mode|noPick|(next|previous|same)Proposal)",
+                    "match": "\\^(first|rand|repeat|private|stayInScope|mode|noPick|noStay|notInEmbeddedASR|resetOnFocus|fallback|(next|previous|same)Proposal)",
                     "name": "support.function.construct",
                     "comment": "operators without parameters"
                 },
