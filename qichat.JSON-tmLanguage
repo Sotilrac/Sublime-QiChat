@@ -57,7 +57,7 @@
                     "comment": "TTS tags"
                 },
                 {
-                    "match": "~\\w*",
+                    "match": "~[\\w-]*",
                     "name": "variable.language.source.qichat",
                     "comment": "concept references"
                 },
