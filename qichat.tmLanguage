@@ -14,7 +14,7 @@
 			<key>comment</key>
 			<string>proposal, user rules, concepts</string>
 			<key>match</key>
-			<string>(proposal|(u|s)\d*|concept|dynamic):</string>
+			<string>(proposal|(u|s)\d*|concept|dynamic|garbage):</string>
 			<key>name</key>
 			<string>storage.source.qichat</string>
 		</dict>
@@ -108,7 +108,7 @@
 			<key>comment</key>
 			<string>concept references</string>
 			<key>match</key>
-			<string>~\w*</string>
+			<string>~[\w-]*</string>
 			<key>name</key>
 			<string>variable.language.source.qichat</string>
 		</dict>

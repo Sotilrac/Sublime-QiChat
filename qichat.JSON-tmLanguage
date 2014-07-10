@@ -6,7 +6,7 @@
 
     "patterns":[
                 {
-                    "match": "(proposal|(u|s)\\d*|concept|dynamic):",
+                    "match": "(proposal|(u|s)\\d*|concept|dynamic|garbage|recover):",
                     "name": "storage.source.qichat",
                     "comment": "proposal, user rules, concepts"
                 },
