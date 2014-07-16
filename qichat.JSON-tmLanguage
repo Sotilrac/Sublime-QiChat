@@ -6,7 +6,7 @@
 
     "patterns":[
                 {
-                    "match": "(proposal|(u|s)\\d*|concept|dynamic|garbage|recover):",
+                    "match": "(proposal|(u|s)\\d*|su|concept|dynamic|garbage|recover):",
                     "name": "storage.source.qichat",
                     "comment": "proposal, user rules, concepts"
                 },
@@ -29,7 +29,7 @@
                                 }
                 },
                 {
-                    "match": "\\^(first|rand|repeat|private|stayInScope|mode|noPick|noStay|notInEmbeddedASR|resetOnFocus|fallback|(next|previous|same)Proposal)",
+                    "match": "\\^(pCall|call|first|rand|repeat|private|stayInScope|mode|noPick|noStay|notInEmbeddedASR|resetOnFocus|fallback|(next|previous|same)Proposal)",
                     "name": "support.function.construct",
                     "comment": "operators without parameters"
                 },

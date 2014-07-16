@@ -14,7 +14,7 @@
 			<key>comment</key>
 			<string>proposal, user rules, concepts</string>
 			<key>match</key>
-			<string>(proposal|(u|s)\d*|concept|dynamic|garbage):</string>
+			<string>(proposal|(u|s)\d*|su|concept|dynamic|garbage|recover):</string>
 			<key>name</key>
 			<string>storage.source.qichat</string>
 		</dict>
@@ -57,7 +57,7 @@
 			<key>comment</key>
 			<string>operators without parameters</string>
 			<key>match</key>
-			<string>\^(first|rand|repeat|private|stayInScope|mode|noPick|noStay|notInEmbeddedASR|resetOnFocus|fallback|(next|previous|same)Proposal)</string>
+			<string>\^(pCall|call|first|rand|repeat|private|stayInScope|mode|noPick|noStay|notInEmbeddedASR|resetOnFocus|fallback|(next|previous|same)Proposal)</string>
 			<key>name</key>
 			<string>support.function.construct</string>
 		</dict>
