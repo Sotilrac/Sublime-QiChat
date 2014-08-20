@@ -1,0 +1,71 @@
+{
+    "name": "qichat",
+    "scopeName": "source.qichat",
+    "fileTypes": ["top"],
+    "uuid": "afd8e4d5-0a8a-4a65-9b40-f16e6ab77861",
+
+    "patterns":[
+                {
+                    "match": "(proposal|(u|s)\\d*|su|concept|dynamic|garbage|recover):",
+                    "name": "storage.source.qichat",
+                    "comment": "proposal, user rules, concepts"
+                },
+                {
+                    "match": "(include|language|topic):",
+                    "name": "keyword.source.qichat",
+                    "comment": "keywords"
+                },
+                {
+                    "match": "#.*",
+                    "name": "comment.source.qichat",
+                    "comment": "comments"
+                },
+                {
+                    "match": "(\\^(?:replace|addword|play|(?:run|start|wait|stop)(?:Tag|Sound){0,1}|clear|(?:de){0,1}activate|notExist|exist|goto(?:Reactivate){0,1}|topicTag|mode))\\(([\\w/-]*)\\)",
+                    "comment": "operators with parameters",
+                    "captures": {
+                                    "1": {"name": "support.function.construct"},
+                                    "2": {"name": "entity.name.tag.source.qichat"}
+                                }
+                },
+                {
+                    "match": "\\^(pCall|call|first|rand|repeat|private|stayInScope|mode|noPick|noStay|notInEmbeddedASR|resetOnFocus|fallback|(next|previous|same)Proposal)",
+                    "name": "support.function.construct",
+                    "comment": "operators without parameters"
+                },
+                {
+                    "match": "%[\\w-]*",
+                    "name": "entity.name.tag.source.qichat",
+                    "comment": "topic tags"
+                },
+                {
+                    "match": "\\$[\\w/-]*",
+                    "name": "constant.other.source.qichat",
+                    "comment": "ALMemory variable"
+                },
+                {
+                    "match": "(e:)([\\w/-]*)",
+                    "comment": "ALMemory event",
+                    "captures": {
+                                    "1": {"name": "storage.source.qichat"},
+                                    "2": {"name": "constant.other.source.qichat"}
+                                }
+                },
+                {
+                    "match": "\\\\((PAU|RSPD|VCT|RMW|SPD|VOL)=\\d+|RST)\\\\",
+                    "name": "constant.language.source.qichat",
+                    "comment": "TTS tags"
+                },
+                {
+                    "match": "~[\\w-]*",
+                    "name": "variable.language.source.qichat",
+                    "comment": "concept references"
+                },
+                {
+                    "match": "[=<>]+",
+                    "name": "string.other.math.tex.source.qichat",
+                    "comment": "Matemathical and logical operators"
+                }
+            ]
+
+}
